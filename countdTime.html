@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <title>CountDown Time</title>
+</head>
+<body class="bg-gray-800">
+    <section class="w-full h-screen flex justify-center items-center bg-gray-800">
+        <div class="simply-countdown flex justify-center items-center mx-auto text-sm text-secondary font-angka lg:px-14 z-10 font-semibold text-gray-300"></div>  
+    </section>
+    <script>
+        simplyCountdown('.simply-countdown' , {
+            year: 2023, // required
+            month: 12, // required
+            day: 13, // required
+            hours: 7, // Default is 0 [0-23] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'hari', plural: 'hari' },
+                hours: { singular: 'jam', plural: 'jam' },
+                minutes: { singular: 'menit', plural: 'menit' },
+                seconds: { singular: 'detik', plural: 'detik' }
+            },
+    });
+    </script>
+    <script src="cdt.js"></script>
+</body>
+</html>

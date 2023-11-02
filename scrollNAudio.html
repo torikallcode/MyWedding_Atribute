@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- page1 -->
+    <section id="page1" class="w-full h-screen bg-sky-500 relative flex justify-center items-center flex-col">
+        <h1 class="text-7xl font-sans font-medium text-gray-300 mb-20">1</h1>
+        <a id="btn-opened" href="#page2" onclick="enable()" class="bg-gray-800 py-2 px-4 text-gray-300 font-utama text-sm rounded-lg">buka undangan</a>
+    </section>
+    <!-- page2 -->
+    <section id="page2" class="w-full h-screen bg-teal-500 relative flex justify-center items-center">
+        <h1 class="text-7xl font-sans font-medium text-gray-300">2</h1>
+    </section>
+    <!-- Audio -->
+    <div id="audio-container">
+        <audio id="song" autoplay loop>
+            <source src="sound/WhatsApp Audio 2023-11-02 at 21.49.25.mpeg"    	type="audio/mpeg">
+        </audio>   
+        <div class="fixed bottom-7 right-5 border-2 border-black rounded-full p-3 audio-icon cursor-pointer hidden">
+            <img src="img/musical-note.png" alt="" class="w-7 flex justify-center items-center">
+        </div>
+    </div>
+    <script src="sna.js"></script>
+</body>
+</html>
